@@ -35,13 +35,15 @@ struct MicRecordView: View {
                 })
                 .accessibilityLabel("마이크")
                 .accessibilityHint(Text("버튼을 눌러 마이크를 켜고 끌 수 있습니다"))
-                
                 //결과
                 VStack {
                     if sttManager.isRecording {
                         Text("음성 인식 중")
                     } else {
-                        Text("검색어 : \(query)")
+                        HStack {
+                            Text("검색어")
+                            Text(" : \(query)")
+                        }
                     }
                 }
                 .font(.system(size: 16, weight: .medium))

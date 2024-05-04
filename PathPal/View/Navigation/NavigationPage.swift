@@ -31,6 +31,9 @@ struct NavigationPage: View {
     var body: some View {
         NavigationStack {
             VStack {
+//                Button("Crash") {
+//                  fatalError("Crash was triggered")
+//                }
                 // 출발지
                 VStack(alignment: .leading) {
                     Text("출발지")

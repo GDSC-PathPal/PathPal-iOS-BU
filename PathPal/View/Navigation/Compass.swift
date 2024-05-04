@@ -21,13 +21,12 @@ struct Compass: View {
                     .font(.system(size: 21, weight: .semibold))
                     .padding(.bottom, 5)
                 Text("방향 설정이 완료되면 시각 보조 화면으로 이동합니다")
-                    .font(.system(size: 17))
+                    .font(.system(size: 15))
                     .padding(.bottom)
                 // 안내 메세지
                 Text("진동이 울릴 때까지 출발 방향을 변경해주세요")
-                    .font(.system(size: 18, weight: .semibold))
+                    .font(.system(size: 16, weight: .medium))
                     .foregroundStyle(Color.hex353535)
-                    .frame(width: 200, alignment: .center)
                     .multilineTextAlignment(.center)
             }
             .padding(.top, -60)
